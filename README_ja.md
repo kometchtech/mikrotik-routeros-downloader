@@ -193,7 +193,7 @@ ARM64 ISOを除くすべてのアーキテクチャ
 
 ## このプロジェクトについて
 
-このプロジェクトは[Routerboard User Group JP](https://rb-ug.jp/)のkometechtechにより作成、管理されています。
+このプロジェクトは[Routerboard User Group JP](https://www.rb-ug.jp/)のkometechtechにより作成、管理されています。
 
 ### クレジット
 
@@ -222,11 +222,11 @@ Modified work Copyright (c) 2025 Routerboard User Group JP
 
 - [MikroTik公式ダウンロードページ](https://mikrotik.com/download)
 - [RouterOSドキュメント](https://help.mikrotik.com/docs/)
-- [Routerboard User Group JP](https://rb-ug.jp/)
+- [Routerboard User Group JP](https://www.rb-ug.jp/)
 - [aria2公式サイト](https://aria2.github.io/)
 
 ## サポート
 
 問題、質問、提案がある場合：
 - 🐛 [Issueを開く](https://github.com/kometchtech/mikrotik-routeros-downloader/issues)
-- 💬 [Routerboard User Group JP](https://rb-ug.jp/)を訪問
+- 💬 [Routerboard User Group JP](https://www.rb-ug.jp/)を訪問

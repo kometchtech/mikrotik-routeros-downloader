@@ -193,7 +193,7 @@ All architectures except ARM64 ISO
 
 ## About
 
-This project is created and maintained by kometchtech from [Routerboard User Group JP](https://rb-ug.jp/).
+This project is created and maintained by kometchtech from [Routerboard User Group JP](https://www.rb-ug.jp/).
 
 ### Credits
 
@@ -222,13 +222,11 @@ See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
 
 - [MikroTik Official Download Page](https://mikrotik.com/download)
 - [RouterOS Documentation](https://help.mikrotik.com/docs/)
-- [Routerboard User Group JP](https://rb-ug.jp/)
+- [Routerboard User Group JP](https://www.rb-ug.jp/)
 - [aria2 Official Site](https://aria2.github.io/)
 
 ## Support
 
 For issues, questions, or suggestions:
 - 🐛 [Open an issue](https://github.com/kometchtech/mikrotik-routeros-downloader/issues)
-- 💬 Visit [Routerboard User Group JP](https://rb-ug.jp/)
-
-
+- 💬 Visit [Routerboard User Group JP](https://www.rb-ug.jp/)

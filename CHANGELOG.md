@@ -5,10 +5,14 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [2.1.2] - 2025-12-06
+
+### Fixed
+- 🐛 Corrected Routerboard User Group JP URL to `https://www.rb-ug.jp/` in all README files
+
 ## [2.1.1] - 2025-12-06
 
 ### Removed
-
 - 📝 Removed footer attribution from README files (English and Japanese)
 
 ## [2.1.0] - 2025-12-06
@@ -22,6 +26,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - 🔧 PowerShell version requirement updated to 7.5.4 or later
 - 🔧 Simplified aria2c installation methods (winget for Windows, apt for Ubuntu/Debian)
 - 📝 Repository URL updated to `https://github.com/kometchtech/mikrotik-routeros-downloader`
+- 📝 Project title changed to "MikroTik RouterOS Downloader"
+- 📝 Description simplified to "packages" (removed "firmware" terminology)
+- 📝 Removed macOS support documentation (not tested)
+- 📝 Removed support for other Linux distributions (Fedora, RHEL, Arch Linux - not tested)
+
+### Removed
+- 🗑️ Batch file (`.bat`) for Windows - direct PowerShell execution recommended
+- 🗑️ macOS installation instructions
+- 🗑️ Fedora/RHEL/Arch Linux installation instructions
 
 ## [2.0.0] - 2025-12-06
 
