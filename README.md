@@ -231,6 +231,4 @@ For issues, questions, or suggestions:
 - 🐛 [Open an issue](https://github.com/kometchtech/mikrotik-routeros-downloader/issues)
 - 💬 Visit [Routerboard User Group JP](https://rb-ug.jp/)
 
----
 
-Made with ❤️ by kometchtech from Routerboard User Group JP Community

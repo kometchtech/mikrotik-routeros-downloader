@@ -230,7 +230,3 @@ Modified work Copyright (c) 2025 Routerboard User Group JP
 問題、質問、提案がある場合：
 - 🐛 [Issueを開く](https://github.com/kometchtech/mikrotik-routeros-downloader/issues)
 - 💬 [Routerboard User Group JP](https://rb-ug.jp/)を訪問
-
----
-
-Routerboard User Group JPのkometechtechより ❤️ を込めて
