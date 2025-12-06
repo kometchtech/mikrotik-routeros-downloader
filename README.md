@@ -1,6 +1,8 @@
 # MikroTik RouterOS Downloader
 
-A PowerShell script for downloading MikroTik RouterOS packages using aria2c for fast parallel downloads.
+A script for downloading MikroTik RouterOS packages using aria2c for fast parallel downloads.
+
+**Available for:** Windows (PowerShell) | Linux (Bash)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -21,62 +23,96 @@ English | [日本語](README_ja.md)
 
 ## Requirements
 
+### Windows
 - **Windows** with PowerShell 7.5.4 or later
 - **aria2c** - Download and install from [https://aria2.github.io/](https://aria2.github.io/)
 
+### Linux
+- **Bash**
+- **aria2c** - Install via package manager
+
 ### Installing aria2c
 
-**Using winget:**
+**Windows (using winget):**
 ```powershell
 winget install aria2.aria2
 ```
 
 After installation, restart your terminal or PowerShell window to ensure aria2c is available in your PATH.
 
+**Linux (Ubuntu/Debian):**
+```bash
+sudo apt install aria2
+```
+
 ## Installation
 
-### Method 1: Download File Directly
+### Method 1: Download Files Directly
 
+**Windows:**
 1. Download `download.ps1` from this repository
 2. Place it in your desired folder
-3. Done!
+
+**Linux:**
+1. Download `download.sh` from this repository
+2. Place it in your desired folder
+3. Make it executable: `chmod +x download.sh`
 
 ### Method 2: Clone Repository
 
 ```bash
-git clone https://github.com/kometchtech/routeros-downloader.git
-cd routeros-downloader
+git clone https://github.com/kometchtech/mikrotik-routeros-downloader.git
+cd mikrotik-routeros-downloader
+
+# For Linux, make the script executable
+chmod +x download.sh
 ```
 
 ## Usage
 
-### Option 1: Bypass Execution Policy (One-time)
+### Windows (PowerShell)
+
+#### Option 1: Bypass Execution Policy (One-time)
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\download.ps1 7.20.6
 ```
 
-### Option 2: Unblock File (Once)
+#### Option 2: Unblock File (Once)
 ```powershell
 Unblock-File .\download.ps1
 .\download.ps1 7.20.6
 ```
 
-### Option 3: Set Execution Policy (Permanent)
+#### Option 3: Set Execution Policy (Permanent)
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 .\download.ps1 7.20.6
+```
+
+### Linux (Bash)
+
+```bash
+./download.sh 7.20.6
 ```
 
 ### Examples
 
 **Download RouterOS v7.20.6:**
 ```powershell
+# Windows (PowerShell)
 .\download.ps1 7.20.6
+
+# Linux (Bash)
+./download.sh 7.20.6
 ```
 
 **Download RouterOS v6.49.19:**
 ```powershell
+# Windows (PowerShell)
 .\download.ps1 6.49.19
+
+# Linux (Bash)
+./download.sh 6.49.19
 ```
 
 ## Output
@@ -174,6 +210,10 @@ Modified work Copyright (c) 2025 Routerboard User Group JP
 
 See [LICENSE](LICENSE) file for details.
 
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
@@ -188,5 +228,9 @@ See [CHANGELOG.md](CHANGELOG.md) for detailed version history.
 ## Support
 
 For issues, questions, or suggestions:
-- 🐛 [Open an issue](https://github.com/kometchtech/routeros-downloader/issues)
+- 🐛 [Open an issue](https://github.com/kometchtech/mikrotik-routeros-downloader/issues)
 - 💬 Visit [Routerboard User Group JP](https://rb-ug.jp/)
+
+---
+
+Made with ❤️ by kometchtech from Routerboard User Group JP Community

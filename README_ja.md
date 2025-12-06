@@ -1,6 +1,8 @@
-# MikroTik RouterOS ダウンローダー
+# MikroTik RouterOS Downloader
 
-aria2cを使用した高速並列ダウンロードでMikroTik RouterOSのパッケージをダウンロードするPowerShellスクリプトです。
+aria2cを使用した高速並列ダウンロードでMikroTik RouterOSパッケージをダウンロードするスクリプトです。
+
+**対応環境:** Windows (PowerShell) | Linux (Bash)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -21,62 +23,96 @@ aria2cを使用した高速並列ダウンロードでMikroTik RouterOSのパッ
 
 ## 必要要件
 
+### Windows
 - **Windows** PowerShell 7.5.4以降
 - **aria2c** - [https://aria2.github.io/](https://aria2.github.io/)からダウンロードしてインストール
 
+### Linux
+- **Bash**
+- **aria2c** - パッケージマネージャー経由でインストール
+
 ### aria2cのインストール
 
-**wingetを使用:**
+**Windows（wingetを使用）:**
 ```powershell
 winget install aria2.aria2
 ```
 
 インストール後、ターミナルまたはPowerShellウィンドウを再起動して、aria2cがPATHで利用可能になるようにしてください。
 
+**Linux（Ubuntu/Debian）:**
+```bash
+sudo apt install aria2
+```
+
 ## インストール
 
 ### 方法1: ファイルを直接ダウンロード
 
+**Windows:**
 1. このリポジトリから`download.ps1`をダウンロード
 2. 任意のフォルダに配置
-3. 完了！
+
+**Linux:**
+1. このリポジトリから`download.sh`をダウンロード
+2. 任意のフォルダに配置
+3. 実行権限を付与: `chmod +x download.sh`
 
 ### 方法2: リポジトリをクローン
 
 ```bash
-git clone https://github.com/kometchtech/routeros-downloader.git
-cd routeros-downloader
+git clone https://github.com/kometchtech/mikrotik-routeros-downloader.git
+cd mikrotik-routeros-downloader
+
+# Linuxの場合、スクリプトに実行権限を付与
+chmod +x download.sh
 ```
 
 ## 使い方
 
-### 方法1: 実行ポリシーをバイパス（1回のみ）
+### Windows (PowerShell)
+
+#### 方法1: 実行ポリシーをバイパス（1回のみ）
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\download.ps1 7.20.6
 ```
 
-### 方法2: ファイルのブロックを解除（1回のみ）
+#### 方法2: ファイルのブロックを解除（1回のみ）
 ```powershell
 Unblock-File .\download.ps1
 .\download.ps1 7.20.6
 ```
 
-### 方法3: 実行ポリシーを設定（恒久的）
+#### 方法3: 実行ポリシーを設定（恒久的）
 ```powershell
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 .\download.ps1 7.20.6
+```
+
+### Linux (Bash)
+
+```bash
+./download.sh 7.20.6
 ```
 
 ### 使用例
 
 **RouterOS v7.20.6をダウンロード:**
 ```powershell
+# Windows (PowerShell)
 .\download.ps1 7.20.6
+
+# Linux (Bash)
+./download.sh 7.20.6
 ```
 
 **RouterOS v6.49.19をダウンロード:**
 ```powershell
+# Windows (PowerShell)
 .\download.ps1 6.49.19
+
+# Linux (Bash)
+./download.sh 6.49.19
 ```
 
 ## 出力
@@ -174,6 +210,10 @@ Modified work Copyright (c) 2025 Routerboard User Group JP
 
 詳細は[LICENSE](LICENSE)ファイルをご覧ください。
 
+## 貢献
+
+貢献を歓迎します！プルリクエストをお気軽に送信してください。
+
 ## 変更履歴
 
 変更履歴の詳細は[CHANGELOG.md](CHANGELOG.md)をご覧ください。
@@ -188,5 +228,9 @@ Modified work Copyright (c) 2025 Routerboard User Group JP
 ## サポート
 
 問題、質問、提案がある場合：
-- 🐛 [Issueを開く](https://github.com/kometchtech/routeros-downloader/issues)
-- 💬 [Routerboard User Group JP](https://rb-ug.jp/)
+- 🐛 [Issueを開く](https://github.com/kometchtech/mikrotik-routeros-downloader/issues)
+- 💬 [Routerboard User Group JP](https://rb-ug.jp/)を訪問
+
+---
+
+Routerboard User Group JPのkometechtechより ❤️ を込めて

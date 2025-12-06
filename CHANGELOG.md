@@ -5,7 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [2.0.0] - 2025/12/06
+## [2.1.0] - 2025-12-06
+
+### Added
+- ✨ Bash version for Linux (Ubuntu/Debian) environments
+- 📝 Cross-platform support documentation (Windows PowerShell + Linux Bash)
+- 📝 Platform-specific installation instructions (winget for Windows, apt for Linux)
+
+### Changed
+- 🔧 PowerShell version requirement updated to 7.5.4 or later
+- 🔧 Simplified aria2c installation methods (winget for Windows, apt for Ubuntu/Debian)
+- 📝 Repository URL updated to `https://github.com/kometchtech/mikrotik-routeros-downloader`
+
+## [2.0.0] - 2025-12-06
 
 ### Added
 - ✨ aria2c integration for fast parallel downloads with multi-connection support
