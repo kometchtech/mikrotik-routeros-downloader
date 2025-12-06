@@ -44,7 +44,7 @@ winget install aria2.aria2
 ### 方法2: リポジトリをクローン
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/routeros-downloader.git
+git clone https://github.com/kometchtech/routeros-downloader.git
 cd routeros-downloader
 ```
 
