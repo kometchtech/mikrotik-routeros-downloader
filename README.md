@@ -44,7 +44,7 @@ After installation, restart your terminal or PowerShell window to ensure aria2c 
 ### Method 2: Clone Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/routeros-downloader.git
+git clone https://github.com/kometchtech/routeros-downloader.git
 cd routeros-downloader
 ```
 
